@@ -1,0 +1,311 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub_Basics</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+  
+<style>
+   * {font-family:'Open Sans', sans-serif;
+}
+  .content-toc {
+    font-size: 1em;
+    align: left;
+  }
+  
+  #btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #A6B3CF;
+    color: #17181A;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #btnScrollToTop:active {
+    background: #657FBF;
+  }
+  
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
+  
+<body>
+      
+<toc class="content-toc">
+<b>On this page:</b>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#background">Background</a></li>
+<li><a href="#before-you-start">Before you start</a></li>
+<li><a href="#create-a-repository">Create a repository</a></li>
+<li><a href="#create-a-branch">Create a branch</a></li>
+<li><a href="#make-and-commit-changes">Make and commit changes</a></li>
+<li><a href="#open-a-pull-request">Open a pull request</a></li>
+<li><a href="#merge-your-pull-request">Merge your pull request</a></li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#next-steps-link">Next steps </a></li>
+</li>
+  
+   <button id="btnScrollToTop">
+     <i class="material-icons">arrow_upward</i>
+   </button>
+  
+      <h1 id="github-basics">GitHub Basics</h1>
+<h3 id="font-color808080follow-this-tutorial-to-get-started-with-github."><font color="808080">Follow this tutorial to get started with GitHub.</font></h3>
+  
+<h2 id="introduction">Introduction</h2>
+<p>In this tutorial, you’ll learn how to create your own Hello World repository and learn GitHub’s pull request workflow.</p>
+<p>By the end of this tutorial, you’ll be able to:</p>
+  
+<ul>
+<li>Create and use a repository</li>
+<li>Start and manage a new branch</li>
+<li>Make changes to a file and push them to GitHub as commits</li>
+<li>Open and merge a pull request</li>
+</ul>
+  
+<h2 id="background">Background</h2>
+<p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. Learn more about the terminology used in this tutorial in the <a href="https://docs.github.com/en/get-started/quickstart/github-glossary">glossary</a>.</p>
+  
+<h2 id="before-you-start">Before you start</h2>
+<p>Before you start this tutorial, you need a <a href="github.com">GitHub account</a> and Internet access. This tutorial is intended for new users. You don’t need to know how to code, use the command line, or install Git (the version control software that GitHub is built on).</p>
+<h2 id="create-a-repository">Create a repository</h2>
+  
+<ol>
+<li>
+<p>In the upper-right corner of any page, go to the + drop-down menu, and select <strong>New repository</strong>.</p>
+</li>
+  
+<li>
+<p>In the <strong>Repository name</strong> box, enter <code>hello-world</code>.</p>
+</li>
+</ol>
+  
+<blockquote>
+<p>A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs.</p>
+</blockquote>
+  
+<ol start="3">
+<li>
+<p>In the <strong>Description</strong> box, enter a short description.</p>
+</li>
+  
+<li>
+<p>Select whether your repository will be <strong>Public</strong> or <strong>Private</strong>.</p>
+</li>
+  
+<li>
+<p>Select <strong>Add a README file</strong>.</p>
+</li>
+</ol>
+  
+<blockquote>
+<p>Repositories often include a README file that provides information about your project.</p>
+</blockquote>
+  
+<ol start="6">
+<li>Select <strong>Create repository</strong>.</li>
+</ol>
+  
+<h2 id="create-a-branch">Create a branch</h2>
+<ol>
+<li>
+<p>Select the <strong>Code</strong> tab of your <code>hello-world</code> repository.</p>
+</li>
+  
+<li>
+<p>Above the file list, go to the dropdown menu and select  <strong>main</strong>.</p>
+</li>
+  
+<li>
+<p>Enter a branch name,  <code>readme-edits</code>, into the text box.</p>
+</li>
+</ol>
+  
+<blockquote>
+<p><strong>Note:</strong> A branch is a copy, or snapshot, of the default <code>main</code> branch.</p>
+</blockquote>
+  
+<ol start="4">
+<li>Select <strong>Create branch: readme-edits from main</strong>.</li>
+</ol>
+  
+<blockquote>
+<p>Now you have two branches, <code>main</code> and <code>readme-edits</code>.</p>
+</blockquote>
+  
+<h2 id="make-and-commit-changes">Make and commit changes</h2>
+  
+<ol>
+<li>
+<p>In the <code>readme-edits</code> branch, select the <strong>README.md</a></strong> file.</p>
+</li>
+  
+<li>
+<p>To edit the file, select <span class="material-symbols-outlined">
+edit
+</span>.</p>
+</li>
+
+<li>
+<p>In the editor, enter information about yourself.</p>
+</li>
+</ol>
+
+<blockquote>
+<p>💡 <strong>Tip:</strong> README files are written in the plain text Markdown language. You can use this <a href="https://www.markdownguide.org/cheat-sheet/#basic-syntax">cheat sheet</a> to get started with Markdown syntax.</p>
+</blockquote>
+
+<ol start="5">
+<li>Select <strong>Commit changes…</strong></li>
+</ol>
+
+<blockquote>
+<p><strong>Note:</strong> These changes will be made only to the README file on your <code>readme-edits</code> branch.</p>
+</blockquote>
+
+<ol start="6">
+<li>In the <strong>Propose changes</strong> box, enter a commit message that describes your changes.</li>
+</ol>
+
+<blockquote>
+<p><strong>Note:</strong> Commit messages capture the history of your changes so that other contributors can understand what you’ve done and why.</p>
+</blockquote>
+
+<ol start="7">
+<li>Select <strong>Propose changes</strong>.</li>
+</ol>
+
+<h2 id="open-a-pull-request">Open a pull request</h2>
+
+<ol>
+<li>Select the <strong>Pull requests</strong> tab of your repository.</li>
+</ol>
+
+<blockquote>
+<p><strong>Note:</strong> Pull requests are requests for someone to review and pull in your changes and merge them into their branch.</p>
+</blockquote>
+
+<ol start="2">
+<li>
+<p>Select <strong>New pull request</strong>.</p>
+</li>
+
+<li>
+<p>In the <strong>Example Comparisons</strong> box, select the branch you made, <code>readme-edits</code>, to compare with <code>main</code>.</p>
+</li>
+
+<li>
+<p>Before submitting your changes, review the diffs on the Compare page.</p>
+</li>
+</ol>
+
+<blockquote>
+<p><strong>Note:</strong> The changes, additions, and subtractions are shown in different colors.</p>
+</blockquote>
+
+<ol start="5">
+<li>
+<p>Select <strong>Create pull request</strong>.</p>
+</li>
+
+<li>
+<p>Enter a title for your pull request and a brief description of your changes.</p>
+</li>
+</ol>
+
+<blockquote>
+<p>💡 <strong>Tip:</strong> You can include emojis and drag and drop images and gifs.</p>
+</blockquote>
+  
+<ol start="7">
+  <li>Optionally, to the right of your title and description, select <span class="material-symbols-outlined">
+settings
+</span> next to <strong>Reviewers</strong>, <strong>Assignees</strong>, <strong>Labels</strong>, <strong>Projects</strong>, or <strong>Milestone</strong> to add any of these options to your pull request.</li>
+</ol>
+
+<blockquote>
+<p><strong>Note:</strong> These options offer different ways to collaborate using pull requests. For more information, see “<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">About pull requests</a>.”</p>
+</blockquote>
+
+<ol start="8">
+<li>Select <strong>Create pull request</strong>.</li>
+</ol>
+
+<blockquote>
+<p>Your collaborators can now review your edits and make suggestions.</p>
+</blockquote>
+
+<h2 id="merge-your-pull-request">Merge your pull request</h2>
+
+<ol>
+<li>
+<p>To merge the changes into <code>main</code>, go to the bottom of the pull request and select <strong>Merge pull request</strong>.</p>
+</li>
+  
+<li>
+<p>Select <strong>Confirm merge</strong>.</p>
+</li>
+</ol>
+
+<blockquote>
+<p>You will receive a message that the request was successfully merged and the request was closed.</p>
+</blockquote>
+
+<ol start="3">
+<li>Select <strong>Delete branch</strong>.</li>
+</ol>
+
+<blockquote>
+<p>Now that your pull request is merged and your changes are on <code>main</code>, you can safely delete the <code>readme-edits</code> branch. If you want to make more changes to your project, you can always create a new branch and repeat this process.</p>
+</blockquote>
+
+<h2 id="summary">Summary</h2>
+<p>By completing this tutorial, you’ve learned to create a repository and make a pull request on GitHub.</p>
+
+<p>In this tutorial, you accomplished the following tasks:</p>
+
+<ul>
+<li>Created an open source repository</li>
+<li>Started and managed a new branch</li>
+<li>Changed a file and committed those changes to GitHub</li>
+<li>Opened and merged a pull request</li>
+</ul>
+
+<p>Take a look at your GitHub profile and you’ll see your work reflected on your contribution graph.</p>
+
+<h2 id="next-steps-link">Next steps </h2>
+<p>Refer to the following resources for more information:</p>
+
+<ul>
+<li>“<a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a>”</li>
+<li><a href="https://docs.github.com/en/get-started/quickstart">Get started quickstarts</a></li>
+</ul>
+
+<script>
+  const btnScrollToTop = document.querySelector ("#btnScrollToTop");
+  
+  btnScrollToTop.addEventListener("click", function(){
+    window.scrollTo(0,0);
+  });
+  
+</script>
+
+</body>
+
+</html>
